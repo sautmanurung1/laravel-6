@@ -63,7 +63,7 @@
 
 					<!-- logo -->
 					<div class="nav-logo">
-						<a href="index.html" class="logo"><img src="{{ asset('public/frontend/img/logo.png')}}" alt=""></a>
+						<a href="index.html" class="logo"><img src="{{ asset('public/frontend/img/judul.png')}}" alt=""></a>
 					</div>
 					<!-- /logo -->
 
@@ -92,12 +92,12 @@
 					<ul class="nav-menu">
 						<li><a href="{{ url('') }}">Beranda</a></li>
 						<li class="has-dropdown">
-							<a href="index.html">CATEGORY</a>
+							<a href="#">CATEGORY</a>
 							<div class="dropdown">
 								<div class="dropdown-body">
 									<ul class="dropdown-list">
 									@foreach($category_widget as $result1)
-									<li><a href="category.html">{{ $result1->name }}</a></li>
+									<li><a href="{{ route('blog.category', $result1->slug) }}">{{ $result1->name }}</a></li>
 									@endforeach
 									</ul>
 								</div>
@@ -105,8 +105,7 @@
 						</li>
 				
 						<li><a href="{{ route('blog.list') }}">List Post</a></li>
-						<li><a href="#">Health</a></li>
-						<li><a href="#">Travel</a></li>
+						<li><a href="#">About Us</a></li>
 					</ul>
 					<!-- /nav -->
 				</div>
@@ -115,16 +114,19 @@
 
 			<!-- Aside Nav -->
 			<div id="nav-aside">
-				<ul class="nav-aside-menu">
-					<li><a href="index.html">Home</a></li>
-					<li class="has-dropdown"><a>Categories</a>
-						<ul class="dropdown">
-							<li><a href="#">Lifestyle</a></li>
-							<li><a href="#">Fashion</a></li>
-							<li><a href="#">Technology</a></li>
-							<li><a href="#">Travel</a></li>
-							<li><a href="#">Health</a></li>
-						</ul>
+				<ul class="nav-aside-menu" class="active">
+					<li><a href="{{ url('') }}">Home</a></li>
+					<li class="has-dropdown">
+							<a href="#">CATEGORY</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+									@foreach($category_widget as $result1)
+									<li><a href="{{ route('blog.category', $result1->slug) }}">{{ $result1->name }}</a></li>
+									@endforeach
+									</ul>
+								</div>
+							</div>
 					</li>
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="contact.html">Contacts</a></li>
