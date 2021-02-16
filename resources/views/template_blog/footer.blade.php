@@ -7,9 +7,9 @@
 				<div class="col-md-3">
 					<div class="footer-widget">
 						<div class="footer-logo">
-							<a href="index.html" class="logo"><img src="./img/logo-alt.png" alt=""></a>
+							<a href="{{ url('') }}" class="logo"><img src="{{ asset('public/frontend/img/judul.png')}}" alt=""></a>
 						</div>
-						<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+						<p>Selamat Datang Di Blog Saya dan Selamat Membaca</p>
 						<ul class="contact-social">
 							<li><a href="https://wa.wizard.id/4842dc" class="social-whatsapp"><i class="fa fa-whatsapp"></i></a></li>
 							<li><a href="https://twitter.com/smanurung3601" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
@@ -27,18 +27,6 @@
 								<li><a href="{{ route('blog.category', $hasil->slug) }}">{{ $hasil->name }} <span>{{ $hasil->posts->count() }}</span></a></li>
 								@endforeach
 							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="footer-widget">
-						<h3 class="footer-title">Newsletter</h3>
-						<div class="newsletter-widget">
-							<form>
-								<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
-								<input class="input" name="newsletter" placeholder="Enter Your Email">
-								<button class="primary-button">Subscribe</button>
-							</form>
 						</div>
 					</div>
 				</div>

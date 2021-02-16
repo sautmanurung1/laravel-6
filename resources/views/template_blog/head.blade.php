@@ -21,7 +21,7 @@
 	<meta name="twitter:image" content="">
 	<meta name="twitter:card" content="">
 
-	<title>Saut Blog</title>
+	<title>@yield('title')</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
@@ -60,7 +60,7 @@
 						<li><a href="https://www.instagram.com/sautmanurung/"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 					<!-- /social -->
-
+					<link rel="icon" href="{{ asset('public/frontend/img/icon.png')}}">
 					<!-- logo -->
 					<div class="nav-logo">
 						<a href="{{ url('') }}" class="logo"><img src="{{ asset('public/frontend/img/judul.png')}}" alt=""></a>
@@ -130,7 +130,7 @@
 					</li>
 					<li><a href="{{ route('blog.about') }}">About Us</a></li>
 					<li><a href="{{ route('blog.list') }}">List Post</a></li>
-					<li><a href="#">Advertise</a></li>
+					<li><a href="http://zona-nyaman.ml">Advertise</a></li>
 				</ul>
 				<button class="nav-close nav-aside-close"><span></span></button>
 			</div>

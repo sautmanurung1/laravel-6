@@ -1,5 +1,5 @@
+@section('title', 'About Us')
 @extends('template_blog.content')
-
 @section('isi')
 	<div id="post-header" class="page-header">
 			<div class="page-header-bg" style="

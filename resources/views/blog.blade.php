@@ -1,3 +1,4 @@
+@section('title', 'Welcome To - Saut Blog')
 @extends('template_blog.content')
 	
 @section('isi')

@@ -1,8 +1,8 @@
+@foreach($data as $isi_post)
+@section('title', $isi_post->judul)
 @extends('template_blog.content')
 
 @section('isi')
-
-	@foreach($data as $isi_post)
 
 	<div id="post-header" class="page-header">
 			<div class="page-header-bg" style="

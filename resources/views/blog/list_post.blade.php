@@ -1,3 +1,4 @@
+@section('title', 'List Blog')
 @extends('template_blog.content')
 @section('isi')
 <div class="col-md-8 hot-post-left">
