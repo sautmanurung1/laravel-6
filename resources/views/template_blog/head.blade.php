@@ -63,7 +63,7 @@
 
 					<!-- logo -->
 					<div class="nav-logo">
-						<a href="index.html" class="logo"><img src="{{ asset('public/frontend/img/judul.png')}}" alt=""></a>
+						<a href="{{ url('') }}" class="logo"><img src="{{ asset('public/frontend/img/judul.png')}}" alt=""></a>
 					</div>
 					<!-- /logo -->
 
