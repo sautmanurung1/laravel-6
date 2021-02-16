@@ -43,4 +43,12 @@ class BlogController extends Controller
         $data = Posts::where('judul', $request->cari)->orWhere('judul','like','%'.$request->cari.'%')->paginate(6);
         return view('blog.list_post', compact('data','category_widget'));
     }
+
+    public function about()
+    {
+        $category_widget = Category::all();
+
+        $data = posts::where('judul', 'About Us');
+        return view('blog.about', compact('data','category_widget'));
+    }
 }

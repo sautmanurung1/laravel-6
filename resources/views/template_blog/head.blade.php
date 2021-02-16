@@ -54,10 +54,10 @@
 				<div class="container">
 					<!-- social -->
 					<ul class="nav-social">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://wa.wizard.id/4842dc"><i class="fa fa-whatsapp"></i></a></li>
+						<li><a href="https://twitter.com/smanurung3601"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://github.com/sautmanurung1"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://www.instagram.com/sautmanurung/"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 					<!-- /social -->
 
@@ -105,7 +105,7 @@
 						</li>
 				
 						<li><a href="{{ route('blog.list') }}">List Post</a></li>
-						<li><a href="#">About Us</a></li>
+						<li><a href="{{ route('blog.about') }}">About Us</a></li>
 					</ul>
 					<!-- /nav -->
 				</div>
@@ -128,8 +128,8 @@
 								</div>
 							</div>
 					</li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="{{ route('blog.about') }}">About Us</a></li>
+					<li><a href="{{ route('blog.list') }}">List Post</a></li>
 					<li><a href="#">Advertise</a></li>
 				</ul>
 				<button class="nav-close nav-aside-close"><span></span></button>

@@ -21,6 +21,7 @@ Route::get('/isi-post/{slug}', 'BlogController@isi_blog')->name('blog.isi');
 Route::get('/list-post','BlogController@list_blog')->name('blog.list');
 Route::get('/list-category/{category}','BlogController@list_category')->name('blog.category');
 Route::get('/cari','BlogController@cari')->name('blog.cari');
+Route::get('/about', 'BlogController@about')->name('blog.about');
 
 
 

@@ -11,10 +11,10 @@
 						</div>
 						<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
 						<ul class="contact-social">
-							<li><a href="#" class="social-facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="social-google-plus"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://wa.wizard.id/4842dc" class="social-whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+							<li><a href="https://twitter.com/smanurung3601" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://github.com/sautmanurung1" class="social-github"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.instagram.com/sautmanurung/" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -50,10 +50,7 @@
 				<div class="col-md-6 col-md-push-6">
 					<ul class="footer-nav">
 						<li><a href="{{ url('') }}">Home</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Contacts</a></li>
-						<li><a href="#">Advertise</a></li>
-						<li><a href="#">Privacy</a></li>
+						<li><a href="{{ route('blog.about') }}">About Us</a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 col-md-pull-6">
