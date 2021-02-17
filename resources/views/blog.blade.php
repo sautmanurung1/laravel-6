@@ -19,8 +19,12 @@
 					<a class="post-img" href="{{ route('blog.isi', $carousel->slug ) }}"><img class="d-block"src="{{ $carousel['gambar'] }}" alt="First slide"></a>
                         <div class="carousel-caption d-md-block">
                             <div class="slider_title">
-                                <h1>{{ $carousel->judul}}</h1>
+                                <h1>{{ $carousel->judul }}</h1>
+
                             </div>
+							<div class="post-category">
+								<a href="{{ route('blog.category', $carousel->category->name ) }}">{{ $carousel->category->name }}</a>
+							</div>
                         </div>
                     </div>
 				@endforeach
@@ -70,12 +74,16 @@
 							</div>
 						</div>
 						@endforeach
-			
+						<div class="section-row loadmore text-center">
+							<a href="{{ route('blog.list') }}" class="primary-button">Load More</a>
+						</div>
 					</div>
+					<!-- /row -->
+					<!-- row -->
 					<!-- /row -->
 
 	
-				</div>
+			</div>
 				
 		
 		

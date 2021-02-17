@@ -15,6 +15,13 @@ class BlogController extends Controller
     	return view('blog', compact('data','category_widget'));
     }
 
+    public function latest(Posts $posts){
+        $category_widget = Category::all();
+
+    	$data = $posts->latest()->take(6)->get();
+    	return view('blog', compact('data','category_widget'));
+    }
+
     public function isi_blog($slug){
         $category_widget = Category::all();
         
