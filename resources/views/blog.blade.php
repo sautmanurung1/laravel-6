@@ -5,7 +5,7 @@
 <div class="page-header-bg-center">
 
 					
-	<div class="slider_img layout_two">
+		<div class="slider_img layout_two">
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -15,11 +15,11 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
 				@foreach($data as $carousel)
-                    <div class="item {{$carousel['id']==1?'active':''}}">
+                    <div class="item {{$carousel['id']==10?'active':''}}">
 					<a class="post-img" href="{{ route('blog.isi', $carousel->slug ) }}"><img class="d-block"src="{{ $carousel['gambar'] }}" alt="First slide"></a>
                         <div class="carousel-caption d-md-block">
                             <div class="slider_title">
-                                <h1>{{$carousel['judul']}}</h1>
+                                <h1>{{ $carousel->judul}}</h1>
                             </div>
                         </div>
                     </div>
@@ -33,9 +33,9 @@
                     <i class="icon-arrow-right fa-slider" aria-hidden="true"></i>
                     <span class="sr-only">Next</span>
                 </a>
-			</div>
+            </div>
+        </div>
 	</div>
-		</div>
 	<!-- /SECTION -->
 
 	<!-- SECTION -->
