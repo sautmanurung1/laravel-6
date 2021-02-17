@@ -2,62 +2,40 @@
 @extends('template_blog.content')
 	
 @section('isi')
-<div class="col-md-8 hot-post-left">
+<div class="page-header-bg-center">
 
 					
-					<div class="post post-thumb">
-					<!-- post -->
-						<a class="post-img lazy-load" href=""><img src="" alt="" style=""></a>
-						<div class="post-body">
-							<div class="post-category">
-								<a href=""></a>
-							</div>
-							<h3 class="post-title title-lg"><a href=""></a></h3>
-							<ul class="post-meta">
-								<li><a href=""></a></li>
-								<li></li>
-							</ul>
-						</div>
-					
-					</div>
-					<!-- /post -->
-				</div>
-				<div class="col-md-4 hot-post-right">
-					<!-- post -->
-					<div class="post post-thumb">
-						<a class="post-img lazy-load" href=""><img src="" alt=""></a>
-						<div class="post-body">
-							<div class="post-category">
-								<a href=""></a>
-							</div>
-							<h3 class="post-title"><a href=""></a></h3>
-							<ul class="post-meta">
-								<li><a href=""></a></li>
-								<li></li>
-							</ul>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="post post-thumb">
-						<a class="post-img" href=""><img src="" alt=""></a>
-						<div class="post-body">
-							<div class="post-category">
-								<a href=""></a>
-								<a href=""></a>
-							</div>
-							<h3 class="post-title"><a href=""></a></h3>
-							<ul class="post-meta">
-								<li><a href=""></a></li>
-								<li></li>
-							</ul>
-						</div>
-					</div>
-					<!-- /post -->
-				</div>
-		<!-- /container -->
+	<div class="slider_img layout_two">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+					<li data-target="#carousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+				@foreach($data as $carousel)
+                    <div class="item {{$carousel['id']==1?'active':''}}">
+					<a class="post-img" href="{{ route('blog.isi', $carousel->slug ) }}"><img class="d-block"src="{{ $carousel['gambar'] }}" alt="First slide"></a>
+                        <div class="carousel-caption d-md-block">
+                            <div class="slider_title">
+                                <h1>{{$carousel['judul']}}</h1>
+                            </div>
+                        </div>
+                    </div>
+				@endforeach
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <i class="icon-arrow-left fa-slider" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <i class="icon-arrow-right fa-slider" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+			</div>
 	</div>
+		</div>
 	<!-- /SECTION -->
 
 	<!-- SECTION -->

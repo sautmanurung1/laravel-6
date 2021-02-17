@@ -28,6 +28,9 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="{{ asset('public/frontend/css/bootstrap.min.css') }}" />
+	
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="{{ asset('public/frontend/css/owl.carousel.min.css') }}" />
 
 	<!-- Font Awesome Icon -->
 	<link rel="stylesheet" href="{{ asset('public/frontend/css/font-awesome.min.css') }}">

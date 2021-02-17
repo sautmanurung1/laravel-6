@@ -15,21 +15,13 @@
 						<div class="social-widget">
 							<ul>
 								<li>
-									<a href="#" class="social-facebook">
-										<i class="fa fa-facebook"></i>
-										<span>21.2K<br>Followers</span>
+									<a href="https://www.instagram.com/sautmanurung/" class="social-instagram">
+										<i class="fa fa-instagram"></i>
 									</a>
 								</li>
 								<li>
-									<a href="#" class="social-twitter">
+									<a href="https://twitter.com/smanurung3601" class="social-twitter">
 										<i class="fa fa-twitter"></i>
-										<span>10.2K<br>Followers</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="social-google-plus">
-										<i class="fa fa-google-plus"></i>
-										<span>5K<br>Followers</span>
 									</a>
 								</li>
 							</ul>
